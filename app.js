@@ -22,15 +22,14 @@ while (isSunk==false) {
     }  else {
         guessTotal = guessTotal + 1;
 
-        if (userGuess == location1 || userGuess == location2 || userGuess == location3){
+        if (userGuess == location1 || userGuess == location2 || userGuess == location3) {
             alert("HIT!");
             hits = hits + 1;
-            
-            if (hits == 3){
+            if (hits == 3) {
                 isSunk = true; 
                 alert("You sunk my battleship");           
              }
-            } else {
+            }else {
                 alert("MISS")
             }
         }
