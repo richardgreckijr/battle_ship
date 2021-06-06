@@ -4,7 +4,7 @@ var location1 = 4;
 var location1 = 5;
 
 //player's guess
-var userGuess = ;
+var userGuess;
 
 //total number of guesses
 var guessTotal = 0;
@@ -13,8 +13,7 @@ var guessTotal = 0;
 var hits = 0;
 
 //is the ship sunk
-var isSunk = true;
-
+var isSunk = false;
 
 while (isSunk==false) {
     userGuess = prompt("Ready, aim, FIRE! (enter a number 0-6):");
@@ -22,12 +21,17 @@ while (isSunk==false) {
         alert("Please enter a valid number.");
     }  else {
         guessTotal = guessTotal + 1;
-        if (userGuess == location1 || userGuess == location 2 || userGuess == location3){
+
+        if (userGuess == location1 || userGuess == location2 || userGuess == location3){
+            alert("HIT!");
             hits = hits + 1;
+            
             if (hits == 3){
                 isSunk = true; 
                 alert("You sunk my battleship");           
              }
+            } else {
+                alert("MISS")
             }
         }
     }
