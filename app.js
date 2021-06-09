@@ -1,7 +1,7 @@
 //Variables to hold each cell of ship
 var location1 = 3;
-var location1 = 4;
-var location1 = 5;
+var location2 = 4;
+var location3 = 5;
 
 //player's guess
 var userGuess;
